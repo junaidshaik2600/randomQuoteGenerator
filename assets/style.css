@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #faf7f0;
+    color: #4a4947;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container-quote{
+    position: relative;
+    padding: 15px 15px;
+    background-color: #d8d2c2;
+    border-radius: 25px;
+    /* height: 40vh;
+    width: 55vw; */
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;  /* Set a maximum width */  /*chatGpt Generated*/
+    min-height: 150px;  /* Set a minimum height */  /*chatGpt Generated*/
+    box-shadow: 10px 10px 10px 0px rgba(4, 4, 4, 0.1);
+}
+
+#text{
+    align-self: center;
+    display: flex;
+    font-size: 25px;
+    text-align: center;  /* Center text within the box */  /*chatGpt Generated*/
+    margin-bottom: 30px;
+}
+
+#author{
+    position: absolute;  /* Position relative to .container-quote */  /*chatGpt Generated*/
+    bottom: 15px;  /* Fixed distance from the bottom */  /*chatGpt Generated*/
+    right: 15px;  /* Fixed distance from the right */  /*chatGpt Generated*/
+    font-size: 20px;
+    color: #2e2c29; /* Optional: set a specific color */  /*chatGpt Generated*/
+    /* align-self: end;
+    font-size: 20px; */
+}
+
+.containerBtns{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.btns{
+    border: #d8d2c2;
+    box-shadow: 10px 10px 10px 0px rgb(216 210 194);
+    background-color: #b17457;
+    color: #2e2c29;
+    font-size: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.dark{
+    background-color: #181c14;
+    /* color: #615d56; */
+    color: #b7ae9e;
+    display: flex;
+    .container-quote{
+        background-color: #3c3d37;
+    }
+    #author{
+        color: #615d56;
+    }
+    .btns{
+        border: #d8d2c2;
+        box-shadow: 6px 6px 6px 0px rgb(60 61 55);
+        background-color: #697565;
+        color: #ecdfcc;
+    }
+    .container-quote{
+        box-shadow: 10px 10px 10px 0px rgb(255 255 255 / 10%) /* Optional for better aesthetics */  /*chatGpt Generated*/
+    }
+}
+
+@media (max-width: 768px) {
+    .container-quote {
+        max-width: 90%; /* Reduce max-width on smaller screens */
+    }
+}
+
+  
