@@ -4,7 +4,7 @@ const body = document.getElementById("body");
 const dark = document.getElementById("mode")
 const btn = document.querySelectorAll(".btns");
 
-const link = "https://junaidshaik2600.github.io/api-s/Data.json";
+const link = "https://junaidshaik2600.github.io/api-s/randomQuoteGenerator_Data.json";
 let quoteToShow;
 let quotes;
 
